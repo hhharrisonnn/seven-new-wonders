@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback form</title>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link href="stylesheet.css" rel="stylesheet">
+  <link hred="stylesheetForm.css" rel="stylesheet">
+  <script defer src="9.feedback.js"></script>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="header">
+      <h1>Seven New Wonders of the World </h1>
+    </div>
+    <div class="menu">
+      <ul>
+        <li class="logo"><img src="favicon-32x32.png"></li>
+        <a href="0.index.html"><li class="active"><b>Background to the project</b></li></a>
+        <a href="1.great-wall-of-china.html"><li>Great Wall of China</li></a>  
+        <a href="2.petra.html"><li>Petra</li></a> 
+        <a href="3.the-colosseum.html"><li>The Colosseum</li></a> 
+        <a href="4.chichen-itza.html"><li>Chichén Itzá</li></a> 
+        <a href="5.machu-picchu.html"><li>Machu Picchu</li></a> 
+        <a href="6.taj-mahal.html"><li>Taj Mahal</li></a> 
+        <a href="7.christ-the-redeemer.html"><li>Christ the Redeemer</li></a> 
+        
+      </ul>
+    </div>
+  </div>
+
+  <p class="title">
+    <b>Feedback form</b>
+  </p>
+  
+  <div id="error"></div>
+  <form action="https://formspree.io/harrison.ho19@gmail.com" method="post"> 
+    <div>
+      <label for="firstName">First name</label>
+      <input id="firstName" name="firstName" type="text" required class="input1">
+    </div>
+    <div>
+      <label for="lastName">Last name</label>
+      <input id="lastName" name="lastName" type="text" required>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email">
+    </div>
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message"></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
