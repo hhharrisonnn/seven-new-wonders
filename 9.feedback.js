@@ -9,11 +9,11 @@ const mailFormat = /(?:[a-z0-9!#$%&'+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&'+/=?^_`{|}~-]
 form.addEventListener("submit", (e) => {
   let messages = []
   if (firstName.value === "" || firstName.value == null) {
-    messages.push("First name is required");
+    messages.push("Please fill in this field.");
   }
 
   if (lastName.value === "" || lastName.value == null) {
-    messages.push("Last name is required");
+    messages.push("Please fill in this field.");
   }
 
   if (email.match(mailFormat)) {
